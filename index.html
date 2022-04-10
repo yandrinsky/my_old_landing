@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width'>
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,700|Roboto:300,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="src/css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="src/css/fonts.css">
+	<link rel="stylesheet" href="src/css/normalize.css">
+	<link rel="stylesheet" href="src/css/slick.css">
+	<link rel="stylesheet" href="src/css/slick-theme.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="build/css/style.css">
+
+</head>
+<body >
+
+<header class="header" >
+	<div class="header__inner">
+		<a href="#services">
+			<div class="logo">
+				<div class="logo__item logo__item_big">
+					yandrinsky
+				</div>
+				<div class="logo__inner">
+					<div class="logo__item ">верстка</div>
+					<div class="logo__item-stick"></div>
+					<div class="logo__item">wordpress</div>
+				</div>
+			</div>
+		</a>
+
+		<div class="menu">
+			<div class="header__btn-menu">
+				<span class="icon-bars"></span>
+			</div>
+			<ul class="menu__item-inner">
+				<li class="menu__item">
+					<a href="#services">услуги</a></li>
+
+				<li class="menu__item"><a href="#portfolio">портфолио</a></li>
+				<li class="menu__item"><a href="#price">стоимость</a></li>
+				<li class="menu__item"><a href="#contacts">контакты</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<div class="popup_dark hidden">
+</div>
+<div class="popup hidden">
+	<button id="popup__close">Закрыть</button>
+	<iframe src="" id="popup__iframe"></iframe>
+</div>
+<main class="main">
+	<section class="slider" id="services">
+		<div class="slider__inner">
+			<div class="slider__item slider__item_first">
+				<div class="container container_985">
+					<div class="slider__title ">
+						ВЕРСТКА
+					</div>
+					<div class="slider__text">
+						Качественная и совеременная вёрстка любой сложности: быстрая, адаптивная, кроссбраузерная, с использованием методологии БЭМ
+					</div>
+					<div class="slider__price">
+						От 2000 рублей
+					</div>
+					<a href="#contacts" class="button button_hover-white">Обсудить проект</a>
+				</div>
+			</div>
+			<div class="slider__item slider__item_second">
+				<div class="container container_985">
+					<div class="slider__title">
+						WORDPRESS
+					</div>
+					<div class="slider__text">
+						Качественная и быстрая посадка Вашего сайта на самую популярную CMS. Вы сможете сами редактировать содержимое Вашего сайта, не прибегая к помощи профессионалов.
+					</div>
+					<div class="slider__price">
+						От 4000 рублей
+					</div>
+					<a href="#contacts" class="button button_hover-white">Обсудить проект</a>
+				</div>
+
+			</div>
+			<div class="slider__item slider__item_third">
+				<div class="container container_985">
+					<div class="slider__title">
+						WORDPRESS & ВЕРCТКА
+					</div>
+					<div class="slider__text">
+						Комплексное оказание услуг по верстке Вашего сайта и посадке его на wordpress. Полное доведение сайта до готовности и установка на хостинг.
+					</div>
+					<div class="slider__price">
+						От 5000 рублей
+					</div>
+					<a href="#contacts" class="button button_hover-white">Обсудить проект</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id='portfolio' class="portfolio">
+		<div class="container container_1125">
+			<div class="portfolio__title proxima-title" data-aos="fade-in">
+				портфолио
+			</div>
+			<div class="portfolio__inner">
+				<a data-href="./sites/landing.html" target="_blank" class="portfolio__item" data-aos="fade-right">
+					<span class="portfolio__item-name">UMINERS</span>
+					<span class="portfolio__item-class">landing page</span>
+					<img src="src/img/portfolio/landing.jpg" alt="" class="portfolio__item-img">
+				</a>
+				<a data-href="./sites/software.html" target="_blank" class="portfolio__item" data-aos="fade-left">
+					<span class="portfolio__item-name">UMINERS</span>
+					<span class="portfolio__item-class">sofrware page</span>
+					<img src="src/img/portfolio/sofrware.jpg" alt="" class="portfolio__item-img">
+				</a>
+				<a data-href="./sites/marketplace.html" target="_blank" class="portfolio__item" data-aos="fade-right">
+					<span class="portfolio__item-name">UMINERS</span>
+					<span class="portfolio__item-class">marketplace page</span>
+					<img src="src/img/portfolio/marketplace.jpg" alt="" class="portfolio__item-img">
+				</a>
+				<a data-href="./sites/support_1.html" target="_blank"class="portfolio__item" data-aos="fade-left">
+					<span class="portfolio__item-name">UMINERS</span>
+					<span class="portfolio__item-class">support page</span>
+					<img src="src/img/portfolio/support_1.jpg" alt="" class="portfolio__item-img">
+				</a>
+				<a data-href="./sites/marketplace_list.html" class="portfolio__item" target="_blank"data-aos="fade-right">
+					<span class="portfolio__item-name">UMINERS</span>
+					<span class="portfolio__item-class">marketplace page</span>
+					<img src="src/img/portfolio/marketplace_list.jpg" alt="" class="portfolio__item-img">
+				</a>
+				<a data-href="./sites/utank.html" class="portfolio__item" target="_blank"data-aos="fade-right">
+					<span class="portfolio__item-name">UMINERS</span>
+					<span class="portfolio__item-class">utank page</span>
+					<img src="src/img/portfolio/utank.png" alt="" class="portfolio__item-img">
+				</a>
+				<a data-href="./sites/about_1.html" target="_blank" class="portfolio__item" data-aos="fade-left">
+					<span class="portfolio__item-name">UMINERS</span>
+					<span class="portfolio__item-class">about page</span>
+					<img src="src/img/portfolio/about_1.jpg" alt="" class="portfolio__item-img">
+				</a>
+			</div>
+		</div>
+
+	</section>
+	<section class="price" id="price">
+		<div class="container container_1125">
+			<div class="price__title proxima-title" data-aos="zoom-in">
+				Стоимость
+			</div>
+			<div class="price__inner" >
+				<div class="price__item price__item_transe-speed" data-aos="fade-up">
+					<div class="price__item-inner">
+						<div class="price__item-title proxima-title">
+							ВЕРСТКА
+						</div>
+						<div class="price__item-due-date">
+							От 2 дней
+						</div>
+						<div class="price__item-price">
+							<div class="price__item-price-item price__item_up">
+								от
+							</div>
+							<div class="price__item-price-item price__item_big">
+								2000
+							</div>
+							<div class="price__item-price-item price__item_down">
+								руб
+							</div>
+						</div>
+						<div class="price__item-advantages">
+							<div class="price__item-advantages-item">адаптивная верстка</div>
+							<div class="price__item-advantages-item">кроссбраузерная верстка</div>
+							<div class="price__item-advantages-item">тестовый период: 3 дня</div>
+						</div>
+						<a href="#contacts" class="button button_green">Обсудить проект</a>
+					</div>
+
+				</div>
+				<div class="price__item" data-aos="fade-up" data-aos-delay="100">
+					<div class="price__item-inner">
+						<div class="price__item-title proxima-title">
+							WORDPRESS
+						</div>
+						<div class="price__item-due-date">
+							От 2 дней
+						</div>
+						<div class="price__item-price">
+							<div class="price__item-price-item price__item_up">
+								от
+							</div>
+							<div class="price__item-price-item price__item_big">
+								4000
+							</div>
+							<div class="price__item-price-item price__item_down">
+								руб
+							</div>
+						</div>
+						<div class="price__item-advantages">
+							<div class="price__item-advantages-item">быстрота и качество</div>
+							<div class="price__item-advantages-item">простота и популярность</div>
+							<div class="price__item-advantages-item">тестовый период: 3 дня</div>
+						</div>
+						<a href="#contacts" class="button button_green">Обсудить проект</a>
+					</div>
+
+				</div>
+				<div class="price__item" data-aos="fade-up" data-aos-delay="200">
+					<div class="price__item-inner">
+						<div class="price__item-title proxima-title">
+							ВЕРСТКА & WORDPRESS
+
+						</div>
+						<div class="price__item-due-date">
+							От 5 дней
+						</div>
+						<div class="price__item-price">
+							<div class="price__item-price-item price__item_up">
+								от
+							</div>
+							<div class="price__item-price-item price__item_big">
+								5000
+							</div>
+							<div class="price__item-price-item price__item_down">
+								руб
+							</div>
+						</div>
+						<div class="price__item-advantages">
+							<div class="price__item-advantages-item">комплексный подход</div>
+							<div class="price__item-advantages-item">полное завершение сайта</div>
+							<div class="price__item-advantages-item">тестовый период: 3 дня</div>
+						</div>
+						<a href="#contacts" class="button button_green">Обсудить проект</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<section class="contacts" id="contacts">
+		<div class="container container_1125">
+			<div class="contacts__title proxima-title" data-aos="fade-right">
+				Контакты
+			</div>
+			<div class="contacts__text" data-aos="fade-right" data-aos-delay="100">
+				Отправьте нам ваше предложение или идею и мы обязательно вам ответим.
+			</div>
+
+			<form action="" class="form" data-aos="zoom-in">
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Yandrinsky верстка | wordpress">
+				<input type="hidden" name="admin_email" value="yandrinsky@gmail.com">
+				<input type="hidden" name="form_subject" value="Form Subject">
+				<!-- END Hidden Required Fields -->
+
+				<input name="E-mail" type="Email" class="form__email" placeholder="Email" required>
+				<input name="Имя" type="text" class="form__name" placeholder="Имя" required>
+				<textarea name="Сообщение" name="form_idea" id="" cols="" rows="" class="form__idea" placeholder="Дополнительная информация" required></textarea>
+				<input type="submit" class="button" value="Отправить">
+			</form>
+
+			<div class="contacts__title proxima-title" data-aos="fade-right">
+				Или
+			</div>
+			<div class="contacts__text" data-aos="fade-right">
+				Или отправьте нам письмо на адрес <span>yandrinsky@gmail.com</span>
+			</div>
+		</div>
+	</section>
+</main>
+<footer class="footer">
+	<a href="#services">
+		<div class="logo logo_white">
+			<div class="logo__item logo__item_big">
+				yandrinsky
+			</div>
+			<div class="logo__inner">
+				<div class="logo__item">верстка</div>
+				<div class="logo__item-stick logo__item-stick_white"></div>
+				<div class="logo__item">wordpress</div>
+			</div>
+		</div>
+	</a>
+	<div class="footer__copy">© 2019 Все права защищены.</div>
+</footer>
+
+<div style="display: none;" id="modal">
+	<h2>Hello!</h2>
+	<p>You are awesome!</p>
+</div>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/
+	jquery/3.4.1/jquery.min.js"></script>
+<script src="src/js/slick.min.js"></script>
+<script src="src/js/jquery.fancybox.min.js"></script>
+<script src="build/js/script.js"></script>
+</body>
+</html>

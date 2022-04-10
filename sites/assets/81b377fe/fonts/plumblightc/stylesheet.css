@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'PlumbLightC';
+    src: url('PlumbLightC.eot');
+    src: url('PlumbLightC.eot?#iefix') format('embedded-opentype'),
+        url('PlumbLightC.woff2') format('woff2'),
+        url('PlumbLightC.woff') format('woff'),
+        url('PlumbLightC.ttf') format('truetype'),
+        url('PlumbLightC.svg#PlumbLightC') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
